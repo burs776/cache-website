@@ -1380,3 +1380,20 @@ a:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }
+/* Hover effect for occupied demonstration cells */
+.memory-cell.is-demo-occupied {
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.memory-cell.is-demo-occupied:hover {
+    background: rgba(196, 255, 101, 0.16);
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(196, 255, 101, 0.08);
+}
